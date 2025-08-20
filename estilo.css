@@ -1,0 +1,33 @@
+body {
+background-color: yellow;
+}
+.parrafo {
+      color:darkgreen;
+      background-color:azure;
+}
+
+#parrafoUnico {
+    color:rgb(125, 33, 167)
+}
+
+#contenedor1 {
+    width: 50vw;
+    height: 80vh;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+#contenedor2 {
+    width: 50vw;
+    height: 80vh;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.cuadrado {
+    width: 25%;
+    height: 25%;
+    background-color: aquamarine;
+    border: 1px solid black
+
+}
