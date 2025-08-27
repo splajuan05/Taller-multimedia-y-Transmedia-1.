@@ -61,3 +61,153 @@ background-color: rgb(255, 255, 255);
     border: 1px solid black;
 
 }
+/* Estilo dibujo*/
+#tituloDibujo {
+text-align: center;
+}
+
+#lienzo {
+width: 700px;
+height: 600px;
+background-image: url("https://static.vecteezy.com/system/resources/previews/000/109/425/non_2x/free-vector-watercolor-paper-texture.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid black;
+margin: 0 auto;
+position: relative;
+}
+
+.circulo1 {
+    width: 120px; /* ancho */
+    height: 120px; /* alto */
+    background-color: rgb(255, 255, 255); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 18%; /* posición desde el borde superior del lienzo */
+    left: 27%; /* posición desde el borde izquierdo del lienzo */
+}
+.circulo2 {
+    width: 120px; /* ancho */
+    height: 120px; /* alto */
+    background-color: rgb(255, 255, 255); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 18%; /* posición desde el borde superior del lienzo */
+    left: 57%; /* posición desde el borde izquierdo del lienzo */
+}
+.circulo3 {
+    width: 60px; /* ancho */
+    height: 60px; /* alto */
+    background-color: rgb(0, 0, 0); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 27%; /* posición desde el borde superior del lienzo */
+    left: 33%; /* posición desde el borde izquierdo del lienzo */
+}
+.circulo4 {
+    width: 60px; /* ancho */
+    height: 60px; /* alto */
+    background-color: rgb(2, 0, 0); /* color de fondo */
+    border-radius: 50%; /* redondea los bordes de la figura*/
+    border: 3px solid black; /* borde de la figura: grosor, estilo, color */
+    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
+    top: 27%; /* posición desde el borde superior del lienzo */
+    left: 63%; /* posición desde el borde izquierdo del lienzo */
+}
+
+.cuadrado1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234, 149, 143);
+    position: absolute;
+    top: 60%;
+    left: 70%;
+}
+.cuadrado2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234, 149, 143);
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+.rectangulo1 {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(234, 149, 143);
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+.rectangulo2 {
+    width: 45px;
+    height: 110px;
+    background-color: rgb(251, 0, 0);
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+.rectangulo3 {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+}.rectangulo4 {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 14%;
+    left: 15%;
+
+}.rectangulo5 {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10%;
+    left: 55%;
+
+}.rectangulo6 {
+    width:100px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 14%;
+    left: 73%
+}
+ .triangulo1 {
+  width: 0; 
+  height: 0; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid rgb(220, 175, 102);
+  top: 40%;
+  left: 43%;
+  position: absolute;
+}
+/* línea hecha con border*/
+.lineaVertical {
+    width: 0%;
+    height: 100px;
+    border: 3px solid rgb(223, 206, 206); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 80%;
+    left: 410px;
+}
+/* línea hecha con border*/
+.lineaHorizontal {
+    width: 190px;
+    height: 0px;
+    border: 3px solid rgb(0, 0, 0); /* borde de la figura: grosor, estilo, color */
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
