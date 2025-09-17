@@ -1,25 +1,42 @@
-console.log("Hola");
+const scrollElements = document.querySelectorAll(".js-scroll");
 
-const titulo = document.getElementById("TituloDePagina")
-let estadoOriginal = true;
-console.log(titulo);
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
 
-titulo.addEventListener("click", () => {
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
 
-titulo.innerText = "Un nuevo título"
-titulo.innerText = "de una tortuga"
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
 
-if(estadoOriginal === true) {
-    titulo.innerText = "Esa es la historia"
-    titulo.style.color = "yellow";
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
 }
 
-else{
-    titulo.innerText = "Esta es la historia";
-    titulo.style.color = "black";
-}
-
-
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
 });
 
 
